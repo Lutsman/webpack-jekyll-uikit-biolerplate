@@ -30,7 +30,7 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
-theme: minima
+#theme: minima
 plugins:
   - jekyll-feed
 
@@ -42,7 +42,21 @@ plugins:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - src
+  - webpack
+  - package.json
+  - README.md
+  - yarn-error.log
+  - yarn.lock
+
 # exclude:
+#   - webpack
+#   - src
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/

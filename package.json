@@ -6,7 +6,8 @@
   "author": "Lutsman <333333y@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack --config webpack/webpack.config.dev.js --colors & bundle exec jekyll serve"
+    "start": "webpack --config webpack/webpack.config.dev.js --colors --watch & bundle exec jekyll serve",
+    "build": "webpack --config webpack/webpack.config.dev.js --colors && bundle exec jekyll build"
   },
   "dependencies": {
     "@babel/polyfill": "^7.7.0",
